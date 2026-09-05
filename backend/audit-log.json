@@ -1,0 +1,26 @@
+[
+  {
+    "id": "LOG-1788610437167",
+    "timestamp": "2026-09-05T12:13:57.167Z",
+    "type": "RECOMMENDATION",
+    "product": "Wireless Keyboard",
+    "price": 1499,
+    "budget": 2000
+  },
+  {
+    "id": "LOG-1788610450112",
+    "timestamp": "2026-09-05T12:14:10.112Z",
+    "type": "PAYMENT_ATTEMPT",
+    "transactionId": "TXN-1788610450112",
+    "product": "Wireless Keyboard",
+    "upsell": "Wireless Mouse",
+    "amount": 1898
+  },
+  {
+    "id": "LOG-1788610450113",
+    "timestamp": "2026-09-05T12:14:10.113Z",
+    "type": "PAYMENT_SUCCESS",
+    "transactionId": "TXN-1788610450112",
+    "amount": 1898
+  }
+]
