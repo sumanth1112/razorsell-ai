@@ -442,7 +442,7 @@ useEffect(() => {
                     </strong>
 
                     <p>
-                      RazorSell AI cannot charge you automatically.
+                      RazorSell AI cannot charge you automatically. This demo uses a payment simulator; explicit customer confirmation is required before a payment attempt.
                       Your explicit confirmation is required before
                       a payment is created.
                     </p>
@@ -795,7 +795,7 @@ useEffect(() => {
 
         <span>•</span>
 
-        <span>Test Mode</span>
+        <span>Demo Test Mode</span>
 
         <span>•</span>
 
