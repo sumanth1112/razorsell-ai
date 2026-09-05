@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+
 function App() {
   const [message, setMessage] = useState("");
 
@@ -40,7 +42,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/agent/chat",
+        `${API_URL}/api/agent/chat`,
         {
           method: "POST",
           headers: {
@@ -85,7 +87,7 @@ function App() {
   const fetchAuditLogs = async () => {
   try {
     const response = await fetch(
-      "http://localhost:5000/api/audit-logs"
+      `${API_URL}/api/audit-logs`
     );
 
     const data = await response.json();
@@ -108,7 +110,7 @@ useEffect(() => {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/payment/create",
+        `${API_URL}/api/payment/create`,
         {
           method: "POST",
           headers: {

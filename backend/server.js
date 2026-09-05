@@ -4,7 +4,8 @@ const fs = require("fs");
 const path = require("path");
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
+
 
 app.use(cors());
 app.use(express.json());
@@ -311,6 +312,6 @@ app.get("/api/audit-logs", (req, res) => {
 // Server
 // -------------------------
 
-app.listen(PORT, () => {
-  console.log(`RazorSell backend running at http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`RazorSell backend running on port ${PORT}`);
 });
